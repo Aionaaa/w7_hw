@@ -5,9 +5,19 @@
 </template>
 
 <script>
+import {eventBus} from "./main.js";
+import SpaceImageComponent from "./components/SpaceImageComponent";
+
 export default {
-  name:
+  name: 'favourite-list-item',
+  props: ["image"],
+  components: {
+    "favourite-list": FavouriteList
+
+  }
 }
+
+};
 </script>
 
 <style lang="css" scoped>
